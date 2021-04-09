@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./estilo.css" media="screen" />
+</head>
+
+<body>
+    <script src="./logica.js"></script>
+    <h1>API's de HTML5 # Carga y reproducción de video</h1>
+    <br><br>
+    <div id="reproduccion" class="reproduccion">
+    </div>
+    <br><br>
+    <div class="botonera" id="botonera">
+        <button onclick="document.getElementById('video').play();">Reproducir</button>
+        <button onclick="document.getElementById('video').pause();">Pausa</button>
+        <button onclick="document.getElementById('video').volume +=0.1;">Subir Volumen</button>
+        <button onclick="document.getElementById('video').volume -=0.1;">Bajar Volumen</button>
+    </div>
+
+    <h3>Seleccione un fichero mp4 para su visualización:</h3>
+    <input type="file" id="file" name="file" onchange="handleFileSelect(event)" />
+    <br><br><br>
+    <div id="filecontrol"></div>
+
+</body>
+
+</html>
