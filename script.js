@@ -5,7 +5,7 @@ function handleFileSelect(evt) {
         var warn = document.getElementById('filecontrol');
         warn.innerHTML="<h3>Formato no válido.</h3>";
     } else {
-        
+
         var reader = new FileReader();
         reader.onload = (function (theFile) {
             return function (e) {
